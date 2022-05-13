@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+header{
+  padding: 8px 16px;
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.hero{
+  display: flex;
+  flex-direction: row;
+}
+
+.hero__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+    h1{
+      font-size: 64px;
+      span{
+        font-size: 64px;
+        color:#457B9D;
+      }
+    }
+
+  }
+
+  button{
+    margin-top: 32px;
+    cursor: pointer;
+    background: #457B9D;
+    padding: 16px 32px;
+    color: #FFF;
+    border-radius: 10px;
+    border: none ;
+    font-weight: bold;
+    transition: all .3s;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow: none;
+
+    &:hover {
+        background: #1D3557;
+    }
+
+    &:active {
+        position: relative;
+        top: 2px
+    }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin-top: 64px;
+
+  label{
+    font-size: 24px;
+    color: #1D3557;
+  }
+
+  textarea{
+    border: none;
+    background-color: #F3F5F8;
+    border-radius: 5px;
+    height: 200px;
+    padding: 8px;
+    color: #1D3557;
+    margin-top: 16px;
+
+    &::placeholder{
+      color: rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus{
+      border: 3px solid #457B9D ;
+      outline: none;
+    }
+
+  }
+}
+
+.report{
+  display: flex;
+  margin-top:40px;
+  align-items: center;
+  justify-content: center;
+  svg{
+    width:25%;
+    margin-right: 32px;
+    color: #1D3557;
+  }
+
+}
+
+.report__data{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  :nth-child(1){
+    font-size: 24px;
+    font-weight: 700;
+    span{
+      color: #457B9D;
+    }
+  }
+
+  :nth-child(2){
+    color: #1D3557;
+  }
+}
+
+
+.CircularProgressbar .CircularProgressbar-text {
+  font-weight: 700;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #1D3557;
+  padding: 16px;
+  margin-top: 32px;
+
+  small{
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFF;
+  }
+}
+
+
+
+
