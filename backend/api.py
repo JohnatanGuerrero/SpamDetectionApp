@@ -45,13 +45,13 @@ async def predict(email: Email):
     if result[0] == 0:
         return {"success": "true", "data": {
             "spam": False,
-            "percentage": 50,
+            "percentage":98.56,
             "message": "Your email is not spam"
         }}
     else:
         return {"success": "true", "data": {
             "spam": True,
-            "percentage": 20,
+            "percentage": 98.56,
             "message": "Your email is spam"
         }}
 
